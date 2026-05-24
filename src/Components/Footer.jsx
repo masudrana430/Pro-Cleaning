@@ -1,4 +1,4 @@
-// src/components/Footer.jsx
+// src/Components/Footer.jsx
 import { Link } from "react-router-dom";
 import logo from "../assets/Group 427320775.png";
 import {
@@ -6,11 +6,8 @@ import {
   MdOutlinePhone,
   MdOutlineLocationOn,
 } from "react-icons/md";
-<<<<<<< HEAD
+import { FaFacebook } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-=======
-import { FaFacebook, FaXTwitter } from "react-icons/fa6"; // ✅ X (Twitter) icon
->>>>>>> b4f6383 (m)
 
 function GooglePlayIcon(props) {
   return (
@@ -29,116 +26,109 @@ function AppStoreIcon(props) {
 }
 
 export default function Footer() {
-  // Align with your actual routes
   const quickLinks = [
     { to: "/", label: "Home" },
-    { to: "/search-donors", label: "Search Donors" },
-    { to: "/donation-requests", label: "Donation Requests" },
-    { to: "/funding", label: "Funding" },
+    { to: "/issues", label: "Issues" },
+    { to: "/all-issues", label: "All Issues" },
+    { to: "/add-issues", label: "Report Issue" },
     { to: "/dashboard", label: "Dashboard" },
   ];
 
   const resources = [
-    { to: "/how-it-works", label: "How BloodCare Works" },
-    { to: "/why-donate", label: "Why Donate Blood" },
-    { to: "/eligibility", label: "Eligibility & Safety" },
-    { to: "/faq", label: "FAQ" },
-    { to: "/contact", label: "Contact & Support" },
+    { to: "/about", label: "About Us" },
+    { to: "/blog", label: "Blog" },
+    { to: "/support", label: "Support" },
+    { to: "/contact", label: "Contact" },
+    { to: "/privacy-policy", label: "Privacy & Terms" },
   ];
 
   const programs = [
-    { to: "/campaigns", label: "Donation Campaigns" },
-    { to: "/emergency-requests", label: "Emergency Requests" },
-    { to: "/corporate-partners", label: "Corporate Partners" },
-    { to: "/volunteer", label: "Volunteer Network" },
-    { to: "/stories", label: "Donor Stories" },
+    { to: "/all-issues", label: "Community Issues" },
+    { to: "/add-issues", label: "Cleanup Request" },
+    { to: "/my-contribution", label: "My Contributions" },
+    { to: "/dashboard/manage-issues", label: "Manage Issues" },
+    { to: "/dashboard/reports", label: "Reports & Analytics" },
   ];
 
   return (
     <footer className="mt-10 bg-gradient-to-t from-[#020617] via-[#050816] to-[#0F172A] text-slate-100 border-t border-white/5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-8">
-        {/* Top grid */}
         <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-10">
-          {/* Brand + contact (span 2 on md+) */}
           <div className="md:col-span-2">
             <Link
               to="/"
-              aria-label="BloodCare Home"
+              aria-label="Pro Cleaning Home"
               className="inline-flex items-center gap-3"
             >
               <div className="flex items-center justify-center">
-                {/* <div className="bg-white rounded-2xl p-2 shadow-lg shadow-red-500/20 border border-white/40"> */}
-                  <img
-                    src={logo}
-                    alt="BloodCare logo"
-                    className="h-10 w-auto md:h-12"
-                  />
-                {/* </div> */}
+                <img
+                  src={logo}
+                  alt="Pro Cleaning logo"
+                  className="h-10 w-auto md:h-12"
+                />
               </div>
+
               <div className="leading-tight select-none">
-                <p className="text-xs font-semibold tracking-[0.25em] uppercase text-red-300/80">
-                  BloodCare
+                <p className="text-xs font-semibold tracking-[0.25em] uppercase text-emerald-300/80">
+                  Pro Cleaning
                 </p>
+
                 <h2 className="text-[1.6rem] md:text-[1.85rem] font-extrabold tracking-tight">
-                  <span className="bg-gradient-to-r from-[#DC2626] via-[#EA384D] to-[#F97316] bg-clip-text text-transparent">
-                    Donate Blood,
+                  <span className="bg-gradient-to-r from-emerald-400 via-teal-300 to-lime-300 bg-clip-text text-transparent">
+                    Clean City,
                   </span>{" "}
-                  <span className="text-slate-50">Save Lives</span>
+                  <span className="text-slate-50">Better Life</span>
                 </h2>
               </div>
             </Link>
 
             <p className="mt-4 text-sm leading-6 text-slate-300 max-w-md">
-              BloodCare connects donors, recipients, and volunteers across
-              Bangladesh. Find compatible donors, create and manage donation
-              requests, track funding, and see the impact of every donation.
+              Pro Cleaning helps communities report local cleaning issues,
+              organize cleanup activities, track progress, and create a cleaner,
+              safer environment for everyone.
             </p>
 
             <ul className="mt-5 space-y-2 text-sm">
               <li className="flex items-start gap-2">
-                <MdOutlineMail className="mt-0.5 text-red-400" />
+                <MdOutlineMail className="mt-0.5 text-emerald-400" />
                 <a
-                  href="mailto:support@bloodcare.app"
+                  href="mailto:support@procleaning.app"
                   className="link link-hover text-slate-200"
                 >
-                  masud430@bloodcare.app
+                  support@procleaning.app
                 </a>
               </li>
+
               <li className="flex items-start gap-2">
-                <MdOutlinePhone className="mt-0.5 text-red-400" />
+                <MdOutlinePhone className="mt-0.5 text-emerald-400" />
                 <a
-                  href="tel:+880-1XXX-XXXXXX"
+                  href="tel:+8801XXXXXXXXX"
                   className="link link-hover text-slate-200"
                 >
                   +880 1XXX-XXXXXX
                 </a>
               </li>
+
               <li className="flex items-start gap-2">
-                <MdOutlineLocationOn className="mt-0.5 text-red-400" />
+                <MdOutlineLocationOn className="mt-0.5 text-emerald-400" />
                 <span className="text-slate-300">
-                  Chittagong, Bangladesh — Nationwide blood donation support
+                  Chittagong, Bangladesh — Community cleaning support
                 </span>
               </li>
             </ul>
 
-            {/* Apps */}
             <div className="mt-6 flex flex-wrap gap-3">
               <a
                 href="#"
-                className="inline-flex items-center gap-2 rounded-xl border border-white/10
-                           bg-white/5 px-4 py-2 text-xs sm:text-sm font-medium
-                           hover:bg-white/10 hover:border-white/30
-                           text-slate-50 transition-colors"
+                className="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-4 py-2 text-xs sm:text-sm font-medium hover:bg-white/10 hover:border-white/30 text-slate-50 transition-colors"
               >
                 <GooglePlayIcon className="h-5 w-5" />
                 <span>Get it on Google Play</span>
               </a>
+
               <a
                 href="#"
-                className="inline-flex items-center gap-2 rounded-xl border border-white/10
-                           bg-white/5 px-4 py-2 text-xs sm:text-sm font-medium
-                           hover:bg-white/10 hover:border-white/30
-                           text-slate-50 transition-colors"
+                className="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-4 py-2 text-xs sm:text-sm font-medium hover:bg-white/10 hover:border-white/30 text-slate-50 transition-colors"
               >
                 <AppStoreIcon className="h-5 w-5" />
                 <span>Download on the App Store</span>
@@ -146,60 +136,60 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Quick Links */}
           <div>
             <h4 className="font-semibold text-slate-50 mb-3 text-sm tracking-wide uppercase">
               Quick Links
             </h4>
+
             <ul className="space-y-2 text-sm">
-              {quickLinks.map((i) => (
-                <li key={i.label}>
+              {quickLinks.map((item) => (
+                <li key={item.label}>
                   <Link
-                    to={i.to}
-                    className="inline-flex items-center gap-1 text-slate-300 hover:text-red-300 transition-colors"
+                    to={item.to}
+                    className="inline-flex items-center gap-1 text-slate-300 hover:text-emerald-300 transition-colors"
                   >
-                    <span className="h-[3px] w-[3px] rounded-full bg-red-400/60" />
-                    <span>{i.label}</span>
+                    <span className="h-[3px] w-[3px] rounded-full bg-emerald-400/60" />
+                    <span>{item.label}</span>
                   </Link>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Resources */}
           <div>
             <h4 className="font-semibold text-slate-50 mb-3 text-sm tracking-wide uppercase">
               Resources
             </h4>
+
             <ul className="space-y-2 text-sm">
-              {resources.map((i) => (
-                <li key={i.label}>
+              {resources.map((item) => (
+                <li key={item.label}>
                   <Link
-                    to={i.to}
-                    className="inline-flex items-center gap-1 text-slate-300 hover:text-red-300 transition-colors"
+                    to={item.to}
+                    className="inline-flex items-center gap-1 text-slate-300 hover:text-emerald-300 transition-colors"
                   >
-                    <span className="h-[3px] w-[3px] rounded-full bg-red-400/60" />
-                    <span>{i.label}</span>
+                    <span className="h-[3px] w-[3px] rounded-full bg-emerald-400/60" />
+                    <span>{item.label}</span>
                   </Link>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Programs */}
           <div>
             <h4 className="font-semibold text-slate-50 mb-3 text-sm tracking-wide uppercase">
               Programs
             </h4>
+
             <ul className="space-y-2 text-sm">
-              {programs.map((i) => (
-                <li key={i.label}>
+              {programs.map((item) => (
+                <li key={item.label}>
                   <Link
-                    to={i.to}
-                    className="inline-flex items-center gap-1 text-slate-300 hover:text-red-300 transition-colors"
+                    to={item.to}
+                    className="inline-flex items-center gap-1 text-slate-300 hover:text-emerald-300 transition-colors"
                   >
-                    <span className="h-[3px] w-[3px] rounded-full bg-red-400/60" />
-                    <span>{i.label}</span>
+                    <span className="h-[3px] w-[3px] rounded-full bg-emerald-400/60" />
+                    <span>{item.label}</span>
                   </Link>
                 </li>
               ))}
@@ -207,26 +197,25 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Divider: newsletter + social bar */}
         <div className="mt-10 border-t border-white/10 pt-6 flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
-          {/* Newsletter */}
           <div className="w-full lg:max-w-xl">
-            <div className="rounded-2xl bg-slate-900/70 border border-white/10 p-4 md:p-5 shadow-lg shadow-red-500/10">
+            <div className="rounded-2xl bg-slate-900/70 border border-white/10 p-4 md:p-5 shadow-lg shadow-emerald-500/10">
               <div className="md:flex md:items-center md:justify-between gap-4">
                 <div>
                   <h5 className="font-semibold text-slate-50 text-sm md:text-base">
                     Stay updated:
                     <span className="font-normal text-slate-300">
                       {" "}
-                      donation campaigns, emergency alerts, and donor stories.
+                      cleanup campaigns, community alerts, and progress reports.
                     </span>
                   </h5>
                 </div>
+
                 <form
                   className="mt-3 md:mt-0 flex w-full md:w-auto"
                   onSubmit={(e) => {
                     e.preventDefault();
-                    alert("Thanks for subscribing! (wire this to your backend)");
+                    alert("Thanks for subscribing!");
                   }}
                 >
                   <input
@@ -235,15 +224,10 @@ export default function Footer() {
                     placeholder="Email address"
                     className="input input-bordered rounded-r-none w-full md:w-72 bg-slate-950/60 border-white/10 text-slate-100 placeholder:text-slate-500"
                   />
+
                   <button
                     type="submit"
-                    className="
-                      btn rounded-l-none border-0 text-sm font-semibold
-                      bg-gradient-to-r from-[#DC2626] via-[#EA384D] to-[#F97316]
-                      text-white px-5
-                      hover:from-[#EF4444] hover:via-[#F97316] hover:to-[#FDBA74]
-                      transition-all duration-300
-                    "
+                    className="btn rounded-l-none border-0 text-sm font-semibold bg-gradient-to-r from-emerald-500 via-teal-500 to-lime-500 text-white px-5 hover:from-emerald-400 hover:via-teal-400 hover:to-lime-400 transition-all duration-300"
                   >
                     Subscribe
                   </button>
@@ -252,70 +236,46 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Social / meta */}
           <div className="flex flex-wrap items-center gap-3 justify-between text-xs md:text-sm text-slate-300">
             <p className="order-2 lg:order-1 w-full lg:w-auto text-center lg:text-left">
               © {new Date().getFullYear()}{" "}
-              <span className="font-semibold text-slate-100">BloodCare</span>.{" "}
-              Built for donors and recipients in Bangladesh.
+              <span className="font-semibold text-slate-100">Pro Cleaning</span>.
+              Built for cleaner communities.
             </p>
 
-<<<<<<< HEAD
-            <div className="order-1 lg:order-2 flex items-center gap-2 w-full lg:w-auto justify-center lg:justify-end">
+            <div className="order-1 lg:order-2 flex items-center gap-3 w-full lg:w-auto justify-center lg:justify-end">
               <span className="text-xs md:text-sm text-slate-400">
                 Stay connected
               </span>
-              <span className="px-2 py-1 rounded-full bg-white/5 text-xs border border-white/10">
-                Facebook
-              </span>
+
               <a
-                href="https://x.com/bloodcare"
+                href="https://www.facebook.com/profile.php?id=100069416914519"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Follow us on Facebook"
+                className="px-2 py-1 rounded-full bg-white/5 text-xs border border-white/10 inline-flex items-center justify-center hover:bg-white/10 transition-colors"
+                title="Follow us on Facebook"
+              >
+                <FaFacebook className="h-4 w-4" />
+                <span className="sr-only">Facebook</span>
+              </a>
+
+              <a
+                href="https://x.com/ProCleaning"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Follow us on X"
-                className="px-2 py-1 rounded-full bg-white/5 text-xs border border-white/10 inline-flex items-center justify-center"
+                className="px-2 py-1 rounded-full bg-white/5 text-xs border border-white/10 inline-flex items-center justify-center hover:bg-white/10 transition-colors"
                 title="Follow us on X"
               >
                 <FaXTwitter className="h-4 w-4" />
+                <span className="sr-only">X</span>
               </a>
+
               <span className="px-2 py-1 rounded-full bg-white/5 text-xs border border-white/10">
                 Email Updates
               </span>
             </div>
-=======
-          <div className="flex items-center gap-3">
-            <span className="text-sm opacity-80">Stay connected</span>
-            {/* ✅ Replaced Facebook badge with X icon + link */}
-            <a
-              href="https://www.facebook.com/profile.php?id=100069416914519"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Follow us on X"
-              className="px-2 py-1 rounded bg-white/10 text-xs inline-flex items-center justify-center"
-              title="Follow us on X"
-            >
-              <FaFacebook className="h-4 w-4" />
-              <span className="sr-only">Facebook</span>
-            </a>
-
-            {/* ✅ Replaced Twitter badge with X icon + link */}
-            <a
-              href="https://x.com/ProCleaning"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Follow us on X"
-              className="px-2 py-1 rounded bg-white/10 text-xs inline-flex items-center justify-center"
-              title="Follow us on X"
-            >
-              <FaXTwitter className="h-4 w-4" />
-              <span className="sr-only">X</span>
-            </a>
-
-            <span className="px-2 py-1 rounded bg-white/10 text-xs">
-              Email Updates
-            </span>
-            <span className="px-2 py-1 rounded bg-white/10 text-xs">RSS</span>
->>>>>>> b4f6383 (m)
           </div>
         </div>
       </div>

@@ -1,0 +1,40 @@
+
+
+// [
+//   {
+//     "id": 1,
+//     "title": "Winter Coat Fitting for Dogs",
+//     "companyName": "PawCare Studio",
+//     "providerEmail": "info@pawcare.com",
+//     "description": "Custom coat fitting and warm outfit options to keep your dog comfortable in the cold.",
+//     "category": "Clothing",
+//     "image": "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=800&q=80",
+//     "size": 45,
+//     "downloads": 12500,
+//     "slotsAvailable": 4,
+//     "ratings": [
+//       {
+//         "name": "1 star",
+//         "count": 120
+//       },
+//       {
+//         "name": "2 star",
+//         "count": 180
+//       },
+//       {
+//         "name": "3 star",
+//         "count": 740
+//       },
+//       {
+//         "name": "4 star",
+//         "count": 3900
+//       },
+//       {
+//         "name": "5 star",
+//         "count": 7560
+//       }
+//     ],
+//     "ratingAvg": 4.49,
+//     "reviews": 12500
+//   }
+// ]

@@ -23,7 +23,7 @@ import MyContribution from "../Pages/MyContribution";
 import AllIssues from "../Pages/AllIssues";
 import IssueDetails from "../Pages/IssueDetails";
 import UpdateIssueModal from "../Pages/UpdateIssueModal";
-<<<<<<< HEAD
+// <<<<<<< HEAD
 import DashboardLayout from "../Layouts/DashboardLayout";
 import DashboardHome from "../Pages/dashboard/DashboardHome";
 import ProfilePage from "../Pages/dashboard/ProfilePage";
@@ -38,11 +38,9 @@ import PublicDonationRequests from "../Pages/PublicDonationRequests";
 import BloodDonationRequestDetails from "../Pages/donation/BloodDonationRequestDetails";
 import FundingPage from "../Pages/FundingPage";
 // import DonationRequestDetails from "../Pages/donation/DonationRequestDetails";
-=======
+// =======
 import AboutUsSection from "../Pages/About";
-<<<<<<< HEAD
->>>>>>> b4f6383 (m)
-=======
+
 import Contact from "../Pages/Contact";
 import Blog from "../Pages/Blog";
 import Support from "../Pages/Support";
@@ -54,7 +52,7 @@ import MyContributions from "../Pages/dashboard/MyContributions";
 import ManageIssues from "../Pages/dashboard/ManageIssues";
 import ManageUsers from "../Pages/dashboard/ManageUsers";
 import Reports from "../Pages/dashboard/Reports";
->>>>>>> a714453 (m)
+// >>>>>>> a714453 (m)
 // import UpdateIssueModal from "../Pages/UpdateIssueModal";
 // import UpdateIssueModal from "../Pages/UpdateIssueModal";
 // import UpdateIssueModal from "../Pages/UpdateIssueModal";
@@ -214,7 +212,7 @@ const router = createBrowserRouter([
       },
     ],
   },
-<<<<<<< HEAD
+// <<<<<<< HEAD
   {
     path: "/dashboard",
     element: (
@@ -246,7 +244,7 @@ const router = createBrowserRouter([
       </PrivatRoute>
     ),
   },
-=======
+// =======
   // {
   //   path: "*",
   //   element: <ErrorPage />,
@@ -268,7 +266,7 @@ const router = createBrowserRouter([
     { path: "reports", element: <Reports /> },
   ],
 }
->>>>>>> a714453 (m)
+// >>>>>>> a714453 (m)
 ]);
 
 // console.log(router);
